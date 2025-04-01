@@ -6,9 +6,9 @@
 
 <%= form_with(url: movie_path(@movie), method: :patch, data: { turbo: false }) do %>
   <div>
-    <%= label_tag :description %>
+    <%= label_tag :title %>
 
-    <%= text_area_tag :description, @movie.description, { rows: 3 } %>
+    <%= text_field_tag :title, @movie.title %>
   </div>
 
   <div>
